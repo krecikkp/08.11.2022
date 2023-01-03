@@ -1,0 +1,70 @@
+ul
+{
+list-style-type: none;
+margin: 0;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top
+{
+background-color: green;
+height: 50px;
+width: 100%;
+font-size: 40px;
+padding: 25px;
+color: white;
+}
+.bot
+{
+    position: fixed;
+	height: 40px;
+	background:black;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+li
+{
+    background-color: aqua;
+    width: 150px;
+    color: white;
+    padding: 10px;
+
+}
+li:hover
+{
+    background-color: white;
+    border: 1px solid  aqua;
+}
+li:hover a 
+{
+    color: aqua;
+    text-decoration: none;
+    display: block;
+}   
+a
+{
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color:  rgb(68, 216, 0);
+    background-color: white;
+}
+.zagniezdzone {
+    visibility: hidden;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -50px;
+}
+
+.zagniezdzone li {
+    width: 150px;
+}
+
+#blok li:hover .zagniezdzone{
+    visibility: visible;
+}
